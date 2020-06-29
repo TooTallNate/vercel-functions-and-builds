@@ -2,5 +2,10 @@
   "version": 2,
   "builds": [
     { "src": "api/index.js", "use": "@vercel/node" }
-  ]
+  ],
+  "functions": {
+    "api/index.js": {
+      "runtime": "@vercel/node@1.7.1"
+    }
+  }
 }
